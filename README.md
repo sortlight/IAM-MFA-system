@@ -1,7 +1,5 @@
 # IAM MFA Integration System
 
-## Building a Bulletproof Login Fortress
-
 This is a Flask based web app integrated with Keycloak to enforce multi-factor authentication(MFA) using TOTP (for example, Google Authenticator), role-based access control(RBAC) for admin/user roles and JWT token validation for secure access. The system logs all actions for audits and includes Bash and Python scripts to simulate credential stuffing attacks, proving MFA’s effectiveness in blocking unauthorized access. 
 
 Bash scripts also automate setup and monitoring. Built to mimic enterprise IAM workflows, it demonstrates secure authentication, automation and threat mitigation. 
