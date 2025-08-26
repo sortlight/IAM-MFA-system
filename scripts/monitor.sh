@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# monitors script-tails logs, checks health.
+# monitors script-tails logs and checks health
 
 
 echo "Starting IAM System Monitor..."
