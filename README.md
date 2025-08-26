@@ -17,9 +17,9 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 - **Attack Simulation**: Dual options—Python for detailed logic, Bash for lightweight curl-based stuffing demo.
 
 - ## Bash Automation
-  - `setup.sh`: One-command setup (Docker, env, deps)—saves time on repetitive tasks.
-  - `monitor.sh`: Real-time log tailing and health checks—mimics production monitoring.
-  - `attack_simulator.sh`: Bash-powered attack sim using curl—proves MFA blocks brute-force.
+  - `setup.sh`: One-command setup (Docker, env, deps). This saves time on repetitive tasks.
+  - `monitor.sh`: Real-time log tailing and health checks. This mimics production monitoring.
+  - `attack_simulator.sh`: Bash-powered attack sim using curl. This proves MFA blocks brute-force.
 
 - **Sample Web App**
 
