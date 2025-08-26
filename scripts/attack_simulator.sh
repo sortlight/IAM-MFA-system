@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# Bash version of attack curl for lightweight API hits.
-# Create creds.txt with lines like "username:password" for input.
+# Bash version of attack curl for lightweight API hits
+# Create creds.txt with lines like "username:password" for input
 
 echo "Starting Bash Credential Stuffing Simulation..."
 
