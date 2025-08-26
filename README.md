@@ -14,7 +14,7 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 - **RBAC**: Roles control access post-login.
 - **JWT Validation**: Secure token handling.
 - **Audit Logging**: Tracks events in `audit.log`.
-- **Attack Simulation**: Dual options—Python for detailed logic, Bash for lightweight curl-based stuffing demo.
+- **Attack Simulation**: Dual options here which include both Python for detailed logic, Bash for lightweight curl-based stuffing demo.
 
 - ## Bash Automation
   - `setup.sh`: One-command setup (Docker, env, deps). This saves time on repetitive tasks.
@@ -37,7 +37,7 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 
 2. **Bash Scripts in Action** 
 
-   - **setup.sh**: It checks for Docker/Python, installs deps, starts Keycloak, prompts for secrets and generates a `.env` file. This is like a real IAM deployment script—idempotent (safe to run multiple times) with built-in error handling. 
+   - **setup.sh**: It checks for Docker/Python, installs deps, starts Keycloak, prompts for secrets and generates a `.env` file. This is an Identity and Access Management deployment script. Quite idempotent (safe to run multiple times) with built-in error handling. 
 
    - **monitor.sh**: Tails `audit.log` in real-time, pings the app/Keycloak for health and alerts on errors (for example via echo or future email). This mimics tools like Splunk or ELK in a simple script.
 
@@ -46,10 +46,10 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 3. **Attack Mitigation Demo**
 
    - Run simulators with MFA off (in Keycloak): Some "attacks" succeed if creds match.
-   - With MFA on: All fail, as OTP is required—logged in `audit.log`.
+   - With MFA on: All fail, as OTP is required. Nowlogged in `audit.log`.
    - This proves IAM resilience: MFA adds a human element bots can't fake.
 
-4. **Extensibility**: Scripts are modular—tweak `creds.txt` for attacks, add more checks to monitor.sh. In prod, integrate with CI/CD (for exammple, GitHub Actions calling setup.sh).
+4. **Extensibility**: Scripts are modular tweak `creds.txt` for attacks add more checks to monitor.sh. In prod, integrate with CI/CD (for exammple, GitHub Actions calling setup.sh).
 
 ## Getting Started
 
@@ -57,7 +57,7 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 
 - Docker (for Keycloak)
 - Python 3.8+
-- Bash (standard on Linux/Mac; use Git Bash on Windows)
+- Bash (standard on Linux/Mac; Might use Git Bash on Windows)
 - Google Authenticator for TOTP
 - curl (for Bash attack sim)
 
