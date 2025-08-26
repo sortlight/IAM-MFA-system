@@ -126,7 +126,7 @@ To strengthen this project and make it more practical, I decided to add a few Ba
 For deep dives, see `docs/mfa_integration_guide.md`.
 
 ## Contributing
-Fork and PR—add more Bash features!
+Fork add more Bash features! Get in fam!
 
 ## Author
 
