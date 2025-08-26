@@ -1,6 +1,5 @@
 #!/bin/bash
-
-# This script automates setup like a DevOps pro—checks prereqs, starts services, sets env.
+# This script automates setup like a DevOps pro—checks prereqs, starts services, sets env
 
 
 echo "Starting IAM MFA System Setup..."
@@ -27,6 +26,7 @@ else
 fi
 
 # Prompt for secrets and create .env
+
 if [ ! -f "../.env" ]; then
     cp ../.env.example ../.env
     read -p "Enter Client ID (default: flask-app): " client_id
